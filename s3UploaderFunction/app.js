@@ -32,7 +32,7 @@ const getUploadURL = async function() {
   const s3Params = {
     Bucket: process.env.UploadBucket,
     Key:  `${actionId}.xls`,
-    ContentType: 'image/xls' // Update to match whichever content type you need to upload
+    ContentType: 'application/vnd.ms-excel' // Update to match whichever content type you need to upload
     //ACL: 'public-read'      // Enable this setting to make the object publicly readable - only works if the bucket can support public objects
   }
 
